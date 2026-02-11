@@ -57,3 +57,23 @@ for (let i = 2; i <= 50; i++) {
         console.log(i);
     }
 }
+
+
+
+console.log(`---------------`);
+
+
+let sum = 0;
+for (let i = 2; i <= 50; i++) {
+    let isPrime = true;
+    for (let k = 2; k < i; k++) {
+        if (i % k === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+    if (isPrime) {
+        sum += i;
+    }
+}
+console.log(sum);
