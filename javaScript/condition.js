@@ -1,0 +1,28 @@
+// Print numbers divisible by 3 from 1–50
+for (let i = 1; i <= 50; i++) {
+    if (i % 3 === 0) {
+        console.log(i);
+    }
+}
+
+console.log(`-------------------`);
+
+// Count numbers divisible by 5 from 1–100
+let count = 0;
+for (let i = 1; i <= 100; i++) {
+    if (i % 5 === 0) {
+        count++;
+    }
+}
+console.log(count);
+
+console.log(`--------------------`);
+
+// Sum of even numbers from 1–50
+let sumEven = 0;
+for (let i = 1; i <= 50; i++) {
+    if (i % 2 === 0) {
+        sumEven += i;
+    }
+}
+console.log(sumEven);
