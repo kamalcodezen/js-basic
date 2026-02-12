@@ -37,4 +37,17 @@ for (let name of fullName) {
 console.log(revName);
 
 
+console.log(`-------------------`);
+
+
+// Check palindrome string
+
+let number = 324;
+
+let convertStr = String(number);
+
+let revNumber = convertStr.split("").reverse().join("");
+
+let result = number === convertStr;
+console.log(result);
 
