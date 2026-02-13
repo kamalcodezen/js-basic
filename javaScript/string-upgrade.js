@@ -52,3 +52,34 @@ console.log(`---------------------`);
 
 
 
+// Count frequency of character
+
+let cityName = "delhi";
+
+let cityArray = cityName.trim().split("");
+
+let frequencyChar1 = {};
+for (let city of cityArray) {
+    if (frequencyChar1[city]) {
+        frequencyChar1[city]++;
+    } else {
+        frequencyChar1[city] = 1;
+    }
+}
+console.log(frequencyChar1);
+
+
+console.log(`----------------------`);
+
+
+let frequencyChar = {};
+
+for (let city of cityName) {
+    if (frequencyChar[city]) {
+        frequencyChar[city]++;
+    } else {
+        frequencyChar[city] = 1;
+    }
+}
+console.log(frequencyChar);
+
