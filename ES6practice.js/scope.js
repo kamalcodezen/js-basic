@@ -31,3 +31,16 @@ for (let n of name) {
 // console.log(product); // const block scope
 
 
+// 3.function scope 
+
+function functionScope() {
+    var nums = 80;      // var function scope
+
+    let numsNum = 90;    //  let function scope
+
+    const dataNum = 45;   // const function scope
+}
+
+// console.log(nums);
+// console.log(numsNum);
+// console.log(dtaNum); 
