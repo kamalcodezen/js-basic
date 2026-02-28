@@ -5,7 +5,7 @@ function deductCount() {
         let count = 100;
 
         let inside = () => {
-            let count = 300; 
+            let count = 300;
             if (count > 0) {
                 count++;
                 console.log(`count increase ${count}`);
@@ -23,3 +23,25 @@ let result2 = deductCount();
 
 result();
 result();
+
+
+
+console.log(`---------------`);
+
+function totalCount() {
+    let count = 0;
+
+    return function () {
+        count++;
+        console.log(`total count ${count}`);
+    }
+
+}
+let a = totalCount();
+// let b = totalCount();
+let b = a //pointer copy same variable
+a();
+a();
+b();
+b();
+a();
