@@ -1,6 +1,6 @@
 
 function defaultParameter(a = 0, b = 0) {
-    return add = a + b
+  return add = a + b
 }
 
 console.log(defaultParameter(12));
