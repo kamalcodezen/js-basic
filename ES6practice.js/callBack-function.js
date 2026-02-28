@@ -7,4 +7,4 @@ let ageCount = (age) => {
     console.log(age);
 }
 
-details("kamal", 20, ageCount)
+details("kamal", 20, ageCount);

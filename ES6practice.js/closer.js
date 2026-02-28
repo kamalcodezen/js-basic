@@ -45,3 +45,22 @@ a();
 b();
 b();
 a();
+
+
+function studentLife(studentName) {
+    let count = 5;
+    const inside = () => {
+        if (count > 0) {
+            count++;
+            console.log(`${studentName} is another life ${count}`);
+        } else {
+            console.log(`no life`);
+        }
+    }
+    return inside;
+}
+
+let kamal = studentLife("kamal");
+kamal();
+kamal();
+kamal();
