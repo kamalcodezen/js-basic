@@ -1,5 +1,7 @@
+// map , filter , find
 
-let price = [12, 34, 20, 30, 40, 50];
+
+let price = [12, 34, 21, 39, 40, 50];
 
 // array.map -- array element update kore
 
@@ -11,5 +13,15 @@ let sum = price.map((elem) => {
 
 })
 
-console.log(multiply);
-console.log(sum);
+// console.log(multiply);
+// console.log(sum);
+
+
+
+// filter multiple element condition check and new array return
+let priceCheck = price.filter((elem, ind) => {
+    return elem % 2 === 0;
+});
+
+console.log(priceCheck);
+
