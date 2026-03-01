@@ -18,10 +18,25 @@ let sum = price.map((elem) => {
 
 
 
-// filter multiple element condition check and new array return
+// filter method ** multiple element condition check and new array return
 let priceCheck = price.filter((elem, ind) => {
     return elem % 2 === 0;
 });
 
 console.log(priceCheck);
 
+
+
+// find method***  find single element 
+
+let findPrice = price.find((elem, ind, arr) => {
+
+    let check = elem > 10;
+    return check;
+})
+
+console.log(findPrice);
+
+
+let priceFind = price.find((elem) => elem % 2 === 0);
+console.log(priceFind);
