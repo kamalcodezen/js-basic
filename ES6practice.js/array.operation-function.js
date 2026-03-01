@@ -40,3 +40,19 @@ console.log(findPrice);
 
 let priceFind = price.find((elem) => elem % 2 === 0);
 console.log(priceFind);
+
+console.log(`--------------`);
+
+// foreach loop just loop work as same for of loop
+
+
+price.forEach((elem) => {
+    console.log(elem)
+})
+
+let allSum = 0;
+price.forEach((element) => {
+    allSum += element;
+
+});
+console.log(allSum);
