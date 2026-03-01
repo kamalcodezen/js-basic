@@ -23,7 +23,7 @@ const obj = {
     age: 20
 }
 
-let obj2 = { ...obj};
+let obj2 = { ...obj };
 // console.log(obj2)
 // let obj2 = obj;
 
