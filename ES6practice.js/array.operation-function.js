@@ -1,4 +1,4 @@
-// map , filter , find
+// map , filter , find ,forEach ,reduce
 
 
 let price = [12, 34, 21, 39, 40, 50];
@@ -56,3 +56,15 @@ price.forEach((element) => {
 
 });
 console.log(allSum);
+
+
+// reduce method
+
+let summation = price.reduce((acc, elem) => {
+    return acc += elem;
+
+}, 0)
+console.log(summation);
+
+let summationTwo = price.reduce((acc, elem) => acc += elem, 0);
+console.log(summationTwo)
