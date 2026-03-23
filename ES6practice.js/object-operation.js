@@ -26,11 +26,17 @@ console.log(student[age]);
 // optional chaining
 console.log(student.address.details.ps?.gp);
 
-console.log(Object.keys(student.address));
+let keys = Object.keys(student);
+console.log(keys);
 
 console.log(`----------`)
 
-console.log(Object.values(student.address.details))
+let values = Object.values(student);
+console.log(values);
+
+console.log(`----------`)
+
 
 let entries = Object.entries(student);
 console.log(entries);
+
